@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewBox="0 0 3000 3000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0882d7;
+      }
+
+      .cls-2 {
+        fill: #dadc29;
+      }
+
+      .cls-3 {
+        fill: #02c522;
+      }
+
+      .cls-4 {
+        font-size: 375px;
+        fill: #02214f;
+        font-family: "Apple Symbols";
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="925" y="924" width="500" height="500"/>
+  <rect class="cls-2" x="925" y="1452" width="500" height="500"/>
+  <rect class="cls-3" x="1456" y="1452" width="500" height="500"/>
+  <text id="JTB" class="cls-4" x="1475.466" y="1272.057">JTB</text>
+</svg>
