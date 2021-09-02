@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: JS miniSite Template: Created by Dr. John Teye Brown </title>
+    <title>Loan Shark: A JS mini project: Created by Dr. John Teye Brown </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,7 +32,7 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="img/JOHNlogoupdated-min.png" class="d-line-block align-text-middle" 
-            width="30" height="24" alt="logo" /> App Name</a>
+            width="30" height="24" alt="logo" /> Loan Shark</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
                     <a class="nav-link" href="code.html">The Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="">Git Repo</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/teyeb/LoanShark">Git Repo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" href="">About</a>
@@ -64,10 +64,92 @@
   <!--- =================== main Section ====================-->
 
   <main class="flex-shrink-0">
+    
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <h1 class="display-5 fw-bold lh-1 mb-3">
+                  Loan Calculator
+              </h1>
 
-    <div class="container">
-          
-    </div>
+             <div style="background-color: lightgray;">
+                <label>Loan Amount:</label>
+                <input class="form-control" type="number" placeholder="principal amount" width="100%" 
+                    id="principalInput"
+                > 
+                <label>Payments (months):</label>
+                <input class="form-control" type="number" placeholder="payments" width="100%" 
+                    id="termInput"
+                > 
+                <label>Rate (percentage):</label>
+                <input class="form-control" type="number" placeholder="rate" width="100%" 
+                    id="rateInput"
+                >
+                <div class="d-flex justify-content-end p-2">
+                     <button type="button" id="submitBtn" onclick="getValues()"
+                        style="border: 2px solid lightblue; color: blue;"
+                     >Calculate</button>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <h5 class="lh-1 mt-5 text-center"><i>Your Monthly Payments</i></h5>
+                            <h1 class="text-center p-2" id="monthlyPayment">$0.00</h1>
+                <div class="row">
+                    <div class="col-4">
+                        <p style="color: black;" >Total Principal</p>
+                    </div>
+                    <div class="col-6">
+                        <p style="color: black;" id="totalPrincipal" class="text-center">$0.00</p>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <p style="color: black;"> Total Interest</p>
+                    </div>
+                    <div class="col-6">
+                        <p style="color: black;" id= "totalInterest" class="text-center">$0.00</p>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <p style="color: black;">Total Cost</p> 
+                    </div>
+                    <div class="col-6">
+                        <p style="color: black;" id= "totalCost" class="text-center"><b>$0.00</b></p>
+                    </div>  
+                    <div class="col-2">
+                    </div>
+                </div>    
+            </div> 
+        
+        </div>
+
+        <div class="row table-responsive gy-sm-2 gy-md-0 p-2" >
+                        
+                <table class="table table-striped table-sm">
+                    <thead style="background-color: blue; color: white;">
+                        <td>Month</td>
+                        <td>Payment</td>
+                        <td>Principal</td>
+                        <td>Interest</td>
+                        <td>Total Interest</td>
+                        <td>Balance</td>
+                    </thead>
+                    <tbody id="results">
+
+                    </tbody>
+                </table> 
+ 
+        </div>
+      </div>
   </main>
 
 
